@@ -90,6 +90,14 @@ android {
             keyPassword 'android'
         }
     }
+    signingConfigs {
+        release {
+            storeFile file('my-release-key.keystore')
+            storePassword '123456'
+            keyAlias 'my-key-alias'
+            keyPassword '123456'
+        }
+    }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug

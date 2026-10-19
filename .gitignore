@@ -31,6 +31,7 @@ local.properties
 *.iml
 *.hprof
 .cxx/
+*.jks
 *.keystore
 !debug.keystore
 
@@ -42,11 +43,6 @@ yarn-error.log
 
 # fastlane
 #
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
-
 **/fastlane/report.xml
 **/fastlane/Preview.html
 **/fastlane/screenshots
@@ -59,8 +55,13 @@ yarn-error.log
 /ios/Pods/
 /vendor/bundle/
 
-# Temporary files created by Metro to check the health of the file watcher
+# Temporary files created by Metro
 .metro-health-check*
 
 # testing
 /coverage
+
+# Môi trường & IDE (BỔ SUNG THÊM)
+.env
+.env.local
+.vscode/
